@@ -19,7 +19,7 @@ def parse_FORMAT(format_data, sample_data, qual):
     for i in range(len(format_fields)):
         target = format_fields[i]
         sample_value = sample_fields[i]
-        if target in ['GT', 'AD']:
+        if target in ['AD']:
             sample_value = add_zero(sample_value)
 
         elif target in ['PL', 'GP', 'GL']:
